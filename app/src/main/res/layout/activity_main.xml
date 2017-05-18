@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zwonb.qunyingzhuan12.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="100dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="15dp"
+                android:onClick="shareImg"
+                android:src="@mipmap/bg_product_yzt"
+                android:transitionName="yizongtao" />
+
+            <ImageView
+                android:onClick="starToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="15dp"
+                android:src="@mipmap/bg_product_yzt"
+                android:tint="@color/colorAccent" />
+
+            <ImageView
+                android:onClick="startNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="15dp"
+                android:src="@mipmap/bg_product_yzt"
+                android:tint="@color/colorAccent"
+                android:tintMode="add" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="15dp"
+                android:src="@mipmap/bg_product_yzt"
+                android:tint="@color/colorAccent"
+                android:tintMode="multiply" />
+
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:elevation="1dp"
+                android:onClick="startActivity" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:elevation="1dp"
+                android:onClick="none"
+                android:src="@mipmap/bg_product_yzt" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:elevation="1dp"
+                android:onClick="none"
+                android:src="@mipmap/bg_product_yzt" />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:background="@drawable/ripple_click"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:id="@+id/circular1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:elevation="1dp"
+                android:onClick="circular1"
+                android:background="@drawable/oval" />
+
+            <ImageView
+                android:id="@+id/circular2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:elevation="1dp"
+                android:onClick="circular2"
+                android:background="@drawable/rect" />
+            
+            <Button
+                android:onClick="stateAnim"
+                android:id="@+id/state_anim"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
